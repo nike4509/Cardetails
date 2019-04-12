@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type and Run"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:id="@+id/title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make :"
+        android:id="@+id/Tvmake"
+        android:layout_below="@+id/title"/>
+    <EditText
+        android:id="@+id/txtManufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tvmake"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Year :"
+        android:id="@+id/Tvyear"
+        android:layout_below="@+id/txtManufacturer"/>
+
+    <EditText
+        android:id="@+id/txtYearmanufactured"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/Tvyear"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color :"
+        android:id="@+id/Tvcolor"
+        android:layout_below="@+id/txtYearmanufactured"/>
+    <EditText
+        android:id="@+id/txtColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/Tvcolor"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purchase Price(£):"
+        android:id="@+id/Tvprice"
+        android:layout_below="@+id/txtColor"/>
+
+    <EditText
+        android:id="@+id/txtprics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/Tvprice"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Engine size(liter):"
+        android:id="@+id/Tvengine"
+        android:layout_below="@+id/txtprics"
+        />
+
+    <EditText
+        android:id="@+id/txtEngineSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/Tvengine"
+        />
+        <Button
+            android:id="@+id/btnCreateCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Create Car"
+            android:layout_centerHorizontal="true"
+            android:padding="10sp"
+            android:layout_below="@+id/txtEngineSize"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreateCar">
+    <TextView
+        android:id="@+id/txtscrolling"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scrollbars="vertical"
+        style="@style/scrollstyle"
+        android:text=""
+
+        />
+    </ScrollView>
+</RelativeLayout>
